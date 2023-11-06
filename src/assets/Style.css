@@ -1,0 +1,19 @@
+.fondoAzul{
+    background: lightblue !important;
+}
+
+.fondoCoral{
+    background: coral !important;
+    background: coral !important;
+}
+
+/*Esto es solo cambi de duracion este particular animacion*/
+.amimate-animated.animate_bounce{
+    --animete-duration: 2s;
+}
+
+/*Este cambio de todos aniimaciones globalmente*/
+:root{
+    --anime-duration: 800ms;
+    --animate-delay: 0.9s;
+}
