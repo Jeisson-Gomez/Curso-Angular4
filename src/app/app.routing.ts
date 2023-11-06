@@ -1,0 +1,1 @@
+import { TrabajadoresComponent } from "./Trabajadores/Trabajadores.component";
