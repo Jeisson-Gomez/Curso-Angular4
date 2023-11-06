@@ -8,4 +8,6 @@ import { Empleado } from './Empleado';
 
 export class EmpleadoComponent{
     public titulo = 'Componente de empleado';
+
+    constructor(){}
 }
