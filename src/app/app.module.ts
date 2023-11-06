@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { routing, AppRoutingProviders } from './app.routing';
+//Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    routing
   ],
-  providers: [],
+  providers: [AppRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
