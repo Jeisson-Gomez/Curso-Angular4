@@ -5,10 +5,10 @@ import { TrabajadoresComponent } from "./Trabajadores/Trabajadores.component";
 import { EmpleadoComponent } from './Empleado/Empleado.component';
 
 const appRoutes: Routes = [
-    { path: '', component: TrabajadoresComponent },
+    { path: '', component: EmpleadoComponent },
     { path: 'Empleado', component: EmpleadoComponent },
     { path: 'Trabajadores', component: TrabajadoresComponent },
-    { path: '**', component: TrabajadoresComponent}
+    { path: '**', component: EmpleadoComponent}
 ];
 
 export const AppRoutingProviders: any[] = [];
