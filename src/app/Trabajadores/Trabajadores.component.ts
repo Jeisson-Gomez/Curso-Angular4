@@ -20,4 +20,30 @@ export class TrabajadoresComponent{
         this.MayorDeEdad = true;
         this.Comodin = 'Si';
     }
+
+    ngOnInit(){
+        this.cambiarNombre(this.Nombre);
+        console.log(this.Nombre + ' ' + this.Edad);
+
+        //Variables y alcance
+        var uno = 4;
+        var dos = 15;
+
+        if(uno == 8){
+            let uno = 3;
+            let dos = 88;
+
+            console.log("Dentro del If: "+uno+' '+dos);
+        }
+
+        console.log("Fuera del if: "+uno+' '+dos);
+    }
+
+    cambiarNombre(Nombre: any){
+        this.Nombre = 'Jeisson';
+    }
+
+    cambiarEdad(Edad: number){
+        this.Edad = 54;
+    }
 }

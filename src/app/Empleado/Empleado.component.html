@@ -2,8 +2,64 @@
     {{ titulo }}
 </h3>
 
-<div>
+<hr>
+<h3>Colores Switch</h3>
+
+<ul [ngSwitch]="Color">
+    <li *ngSwitchCase="'red'" [ngStyle]="{
+        'background-color': Color,
+        'color': 'white',
+        'padding': '20px'
+    }">
+        Es de color Rojo
+    </li>
+</ul>
+
+<hr>
+
+<p>
+    <strong>
+        Empleado Estrella
+    </strong>
+</p>
+
+<div *ngIf="Trabajador_Externo == true">
+    <button (click)="cambiarExterno(false)">Mostral Trabajador</button>
     <ul>
-        <li></li>
+        <li>{{ Trabajadores[0].Nombre }}</li>
+        <li>{{ Trabajadores[1].Edad }}</li>
+        <li>{{ Trabajadores[2].Cargo }}</li>
+        <li *ngIf="Trabajadores[0].Contratado == true">Esta Contratado</li>
+        <li *ngIf="Trabajadores[1].Contratado == false">No esta Contratado</li>
+    </ul>
+</div>
+
+<div *ngIf="Trabajador_Externo == false">
+    <button (click)="cambiarExterno(true)">Mostrar Empleado</button>
+    <ul>
+        <li>{{ Empleado.Nombre }}</li>
+        <li>{{ Empleado.Edad }}</li>
+        <li>{{ Empleado.Cargo }}</li>
+        <li *ngIf="Empleado.Contratado == true">Esta Contratado</li>
+        <li *ngIf="Empleado.Contratado == false">No esta Contratado</li>
+    </ul>
+</div>
+
+<hr>
+
+<div>
+    <h3>Listado de Empleado</h3>
+
+    <ul>
+        <li *ngFor="let Empleado of Trabajadores; let i = index">
+            <strong>Empleado {{ i + 1}}</strong>
+            <ul>
+                <li>{{ Empleado.Nombre }}</li>
+                <li>{{ Empleado.Edad }}</li>
+                <li>{{ Empleado.Cargo }}</li>
+                <li *ngIf="Empleado.Contratado == true">Esta contratado</li>
+                <li *ngIf="Empleado.Contratado == false">No esta Contratado</li>
+            </ul>
+        </li>
     </ul>
 </div>
