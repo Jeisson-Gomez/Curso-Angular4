@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { routing, AppRoutingProviders } from './app.routing';
 
 //Componentes
@@ -15,8 +16,9 @@ import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
     TrabajadoresComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    FormsModule,
     routing
   ],
   providers: [AppRoutingProviders],
