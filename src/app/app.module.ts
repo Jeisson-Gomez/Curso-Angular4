@@ -6,12 +6,14 @@ import { routing, AppRoutingProviders } from './app.routing';
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactoCompoent } from './Contacto/Contacto.component';
 import { EmpleadoComponent } from './Empleado/Empleado.component';
 import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ContactoCompoent,
     EmpleadoComponent,
     TrabajadoresComponent
   ],
