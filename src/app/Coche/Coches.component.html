@@ -5,7 +5,7 @@
     }
 
     .listado{
-        margin-left: 300px;
+        margin-left: 50px;
     }
 
     form{
@@ -51,7 +51,12 @@
     </ul>
 </div>
 
-<div>
+<div class="listado">
     <h3>Listado de Articulos</h3>
-    <ul *ngIf=""></ul>
+    <ul *ngIf="Articulos">
+        <li *ngFor="let Articulo of Articulos">
+            {{ Articulo.id }} - {{ Articulo.title }}
+        </li>
+        <span *ngIf="!Articulos">Cargando listado...</span>
+    </ul>
 </div>
