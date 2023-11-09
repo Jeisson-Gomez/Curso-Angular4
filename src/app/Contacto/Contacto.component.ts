@@ -2,9 +2,9 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'Contacto',
-    templateUrl: './contacto.component.html'
+    templateUrl: './Contacto.component.html'
 })
 
-export class ContactoCompoent{
+export class ContactoComponent{
     public titulo = 'Pagina de contacto de la web';
 }
