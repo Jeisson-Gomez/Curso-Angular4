@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { CochesComponent } from './Coche/Coches.Component';
 import { ContactoComponent } from './Contacto/Contacto.component';
 import { EmpleadoComponent } from './Empleado/Empleado.component';
+import { HomeComponent } from './Home/Home.component';
 import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
     CochesComponent,
     ContactoComponent,
     EmpleadoComponent,
+    HomeComponent,
     TrabajadoresComponent
   ],
   imports: [

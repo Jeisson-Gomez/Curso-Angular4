@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CochesComponent } from './Coche/Coches.Component';
 import { ContactoComponent } from './Contacto/Contacto.component';
 import { EmpleadoComponent } from './Empleado/Empleado.component';
+import { HomeComponent } from './Home/Home.component';
 import { TrabajadoresComponent } from "./Trabajadores/Trabajadores.component";
 
 const appRoutes: Routes = [
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
     { path: 'Coches', component: CochesComponent },
     { path: 'Contacto', component: ContactoComponent},
     { path: 'Empleado', component: EmpleadoComponent },
+    { path: 'Pagina-Principal', component: HomeComponent },
     { path: 'Trabajadores', component: TrabajadoresComponent },
     { path: '**', component: EmpleadoComponent}
 ];
