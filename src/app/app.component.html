@@ -3,25 +3,24 @@
 </h2>
 
 <hr>
-
 <nav>
-  <a [routerLink]="['/Coches']">
+  <a [routerLink]="['/Coches']" [routerLinkActive]="['activado']">
     Coches
   </a>
   -
-  <a [routerLink]="['/Contacto']">
+  <a [routerLink]="['/Contacto']" [routerLinkActive]="['activado']">
     Contacto
   </a>
   -
-  <a [routerLink]="['/Empleado']">
+  <a [routerLink]="['/Empleado']" [routerLinkActive]="['activado']">
     Empleado
   </a>
   -
-  <a [routerLink]="['/Trabajadores']">
+  <a [routerLink]="['/Trabajadores']" [routerLinkActive]="['activado']">
     Trabajadores
   </a>
 </nav>
 
 <hr>
-<Empleado-tag></Empleado-tag>
-<Trabajadores></Trabajadores>
+
+<router-outlet></router-outlet>

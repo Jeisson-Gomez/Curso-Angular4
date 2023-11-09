@@ -1,0 +1,21 @@
+<div>
+    <form #formCoche="ngForm">
+        <p>
+            <label>Nombre: </label>
+            <input type="text" name="Nombre" #nombre="ngModel" [(ngModel)]="Coche.Nombre" required>
+            <span *ngIf="nombre.touched && !nombre.valid">El Nombre del coche es Incorrecto!!</span>
+        </p>
+
+        <p>
+            <label>Caballaje: </label>
+            <input type="text" name="Caballaje" #caballaje="ngModel" [(ngModel)]="Coche.Caballaje" required pattern="[0-9]+">
+            <span *ngIf="caballaje.touched && !caballaje.valid">El Caballaje del coche es Incorrecto!!</span>
+        </p>
+
+        <p>
+            <label>Color: </label>
+            <input type="text" name="Color" #color="ngModel" [(ngModel)]="Coche.Color" required pattern="[a-zA-Z#]+">
+            <span *ngIf="color.touched && !color.valid">El Color del Coche es Incorrecto!!</span>
+        </p>
+    </form>
+</div>

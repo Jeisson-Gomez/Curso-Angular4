@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { routing, AppRoutingProviders } from './app.routing';
+import { HttpClient, HttpClientModule } from '@angular/common/http'
+
+// used to create fake backend
+import { routing, appRoutingProviders } from './app.routing';
 
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -23,9 +26,10 @@ import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     routing
   ],
-  providers: [AppRoutingProviders],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

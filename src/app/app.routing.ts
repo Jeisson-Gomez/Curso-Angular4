@@ -16,5 +16,5 @@ const appRoutes: Routes = [
     { path: '**', component: EmpleadoComponent}
 ];
 
-export const AppRoutingProviders: any[] = [];
+export const appRoutingProviders: any[] = [];
 export const routing: ModuleWithProviders<any> = RouterModule.forRoot(appRoutes);
