@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { CochesComponent } from './Coche/Coches.Component';
 import { ContactoComponent } from './Contacto/Contacto.component';
 import { EmpleadoComponent } from './Empleado/Empleado.component';
+import { HijoComponent } from './Hijo/Hijo.Component';
 import { HomeComponent } from './Home/Home.component';
 import { PlantillasComponent } from './Plantillas/Pantillas.component';
 import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
@@ -26,6 +27,7 @@ import { ConversorPipe } from './Pipe/Conversor.pipe';
     ContactoComponent,
     ConversorPipe,
     EmpleadoComponent,
+    HijoComponent,
     HomeComponent,
     PlantillasComponent,
     TrabajadoresComponent
