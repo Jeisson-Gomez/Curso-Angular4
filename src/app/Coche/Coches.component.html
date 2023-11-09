@@ -1,22 +1,24 @@
+
+<style>
+    div{
+        float: left;
+    }
+
+    .listado{
+        margin-left: 300px;
+    }
+
+    form{
+        width: 300px;
+    }
+
+    input[type="text"], span{
+        display: block;
+        width: 100%;
+    }
+</style>
+
 <div>
-    <style>
-        div{
-            float: left;
-        }
-
-        .listado{
-            margin-left: 300px;
-        }
-
-        form{
-            width: 300px;
-        }
-
-        input[type="text"], span{
-            display: block;
-            width: 100%;
-        }
-    </style>
     <form #formCoche="ngForm" (ngSubmit)="onSubmit(); formCoche.reset">
         <p>
             <label>Nombre: </label>

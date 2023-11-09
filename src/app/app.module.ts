@@ -15,11 +15,15 @@ import { EmpleadoComponent } from './Empleado/Empleado.component';
 import { HomeComponent } from './Home/Home.component';
 import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
 
+//Los pipes
+import { ConversorPipe } from './Pipe/Conversor.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     CochesComponent,
     ContactoComponent,
+    ConversorPipe,
     EmpleadoComponent,
     HomeComponent,
     TrabajadoresComponent

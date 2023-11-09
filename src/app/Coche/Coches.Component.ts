@@ -1,9 +1,11 @@
 import { Coche } from "./Coche";
 import { Component } from "@angular/core";
+import { PeticionesService } from "../Services/Peticiones.service";
 
 @Component({
     selector: 'Coches',
-    templateUrl: "./Coches.component.html"
+    templateUrl: "./Coches.component.html",
+    providers: [ PeticionesService ]
 })
 
 export class CochesComponent{
