@@ -9,3 +9,8 @@ h2, h3{
 body{
     background: lightcoral;
 }
+
+.activado{
+    font-weight: bold;
+    background: red;
+}

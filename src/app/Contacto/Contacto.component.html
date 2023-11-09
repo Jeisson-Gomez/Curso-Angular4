@@ -2,11 +2,11 @@
     {{ titulo }}
 </h2>
 
-<div>
+<div *ngIf="Parametro">
     Parametro de la Url: {{ Parametro }}
 </div>
 
-<div>
+<div *ngIf="!Parametro">
     <button (click)="redirigir()">Ir a la pagina con Parametro</button>
     <button (click)="redirigirdos()">Ir a la pagina principal</button>
 </div>

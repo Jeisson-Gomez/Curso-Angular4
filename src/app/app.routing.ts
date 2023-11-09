@@ -12,10 +12,11 @@ const appRoutes: Routes = [
     { path: '', component: EmpleadoComponent },
     { path: 'Coches', component: CochesComponent },
     { path: 'Contacto', component: ContactoComponent},
+    { path: 'Contacto/: page', component: ContactoComponent},
     { path: 'Empleado', component: EmpleadoComponent },
     { path: 'Pagina-Principal', component: HomeComponent },
     { path: 'Trabajadores', component: TrabajadoresComponent },
-    { path: '**', component: EmpleadoComponent}
+    { path: '**', component: HomeComponent}
 ];
 
 export const appRoutingProviders: any[] = [];

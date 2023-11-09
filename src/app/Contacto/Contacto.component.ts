@@ -15,7 +15,11 @@ export class ContactoComponent{
         private _Router: Router
     ){}
 
-    ngOnInit(){}
+    ngOnInit(){
+        this._Route.params.forEach((params: Params)=>{
+            this.Parametro = params['page'];
+        });
+    }
 
     redirigir(){
         this._Router.navigate(['/Contacto', 'github.com/Jeisson-Gomez']);
