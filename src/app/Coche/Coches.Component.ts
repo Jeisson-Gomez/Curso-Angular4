@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 
 export class CochesComponent{
     public Coche: Coche;
-    public Coches:  Array<Coche> = []
+    public Coches:  Array<any> = []
 
     constructor(){
         this.Coche = new Coche('', '', '');
@@ -16,5 +16,10 @@ export class CochesComponent{
             new Coche("Dodge Charger", 400, "Rojo"),
             new Coche("Ford Mustang", 350, "Negro"),
         ];
+    }
+
+    onSubmit(){
+        this.Coches.push(this.Coche);
+        this.Coche = new Coche(" ", "", " ");
     }
 }
