@@ -5,14 +5,3 @@
 .fondoCoral{
     background: lightcoral !important;
 }
-
-/*Esto es solo cambiar de duracion este particular animacion*/
-.animate-animated.animate_bounce{
-    --animete-duration: 2s;
-}
-
-/*Este cambio de todos animaciónes globalmente*/
-:root{
-    --anime-duration: 800ms;
-    --animate-delay: 0.9s;
-}
