@@ -5,3 +5,8 @@
 .fondoCoral{
     background: lightcoral !important;
 }
+
+.activado{
+    font-weight: bold;
+    background: red;
+}
