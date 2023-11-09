@@ -13,6 +13,7 @@ import { CochesComponent } from './Coche/Coches.Component';
 import { ContactoComponent } from './Contacto/Contacto.component';
 import { EmpleadoComponent } from './Empleado/Empleado.component';
 import { HomeComponent } from './Home/Home.component';
+import { PlantillasComponent } from './Plantillas/Pantillas.component';
 import { TrabajadoresComponent } from './Trabajadores/Trabajadores.component';
 
 //Los pipes
@@ -26,6 +27,7 @@ import { ConversorPipe } from './Pipe/Conversor.pipe';
     ConversorPipe,
     EmpleadoComponent,
     HomeComponent,
+    PlantillasComponent,
     TrabajadoresComponent
   ],
   imports: [

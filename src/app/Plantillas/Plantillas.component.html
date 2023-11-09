@@ -1,0 +1,22 @@
+<h4>
+    Propiedades input en Angular
+</h4>
+
+
+<hr>
+
+<h4>
+    {{ titulo }}
+</h4>
+
+<div *ngIf="Administrador; then admin else noAdmin"></div>
+
+<ng-template #admin>
+    <button (click)="cambiar(false)">Cambiar</button>
+    <strong style="background: black; color: lightblue;">Eres el Administrador de la web</strong>
+</ng-template>
+
+<ng-template #noAdmin>
+    <button (click)="cambiar(true)">Cambiar</button>
+    <strong style="background: red; color: white;">No eres el Administrador de web</strong>
+</ng-template>
