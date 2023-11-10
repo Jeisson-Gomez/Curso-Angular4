@@ -14,7 +14,7 @@ export class PlantillasComponent{
         Id: 1,
         Web: 'Jeisson-Gomez',
         Tematica: 'Desarrollo Web'
-    }
+    };
 
     constructor(){
         this.titulo = "Plantillas ngTemplate en angular";
