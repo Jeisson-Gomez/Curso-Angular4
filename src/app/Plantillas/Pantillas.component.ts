@@ -11,9 +11,9 @@ export class PlantillasComponent{
 
     public Datos_Externos = 'Jeisson Gomez';
     public Identity={
-        id: "1",
-        Web: 'Hola',
-        Tematica: 'Prueba'
+        id: 1,
+        Web: 'https://github.com/Jeisson-Gomez',
+        Tematica: 'Desarrollo Web'
     };
 
     constructor(){
@@ -28,5 +28,4 @@ export class PlantillasComponent{
     recibirDatos($event: any){
         console.log($event.nombre);
     }
-
 }
