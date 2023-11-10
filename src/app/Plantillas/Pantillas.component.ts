@@ -10,10 +10,10 @@ export class PlantillasComponent{
     public Administrador;
 
     public Datos_Externos = 'Jeisson Gomez';
-    public Identity = {
-        Id: 1,
-        Web: 'Jeisson-Gomez',
-        Tematica: 'Desarrollo Web'
+    public Identity={
+        id: "1",
+        Web: 'Hola',
+        Tematica: 'Prueba'
     };
 
     constructor(){

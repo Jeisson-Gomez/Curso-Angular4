@@ -8,18 +8,14 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
         <li>{{ Propiedad_uno }}</li>
         <li>{{ Propiedad_dos }}</li>
     </ul>
-
-    <button>
-        Enviar datos al padre
-    </button>
     `
 })
 
 export class HijoComponent{
     public title: string;
 
-    @Input('Texto1') Propiedad_uno: string | undefined;
-    @Input('Texto2') Propiedad_dos: string | undefined;
+    @Input('Texto_1') Propiedad_uno: string | undefined;
+    @Input('Texto_2') Propiedad_dos: string | undefined;
 
     constructor(){
         this.title = "Componente hijo"
