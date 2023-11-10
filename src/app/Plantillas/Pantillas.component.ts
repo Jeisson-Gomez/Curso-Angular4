@@ -25,7 +25,9 @@ export class PlantillasComponent{
         this.Administrador = value;
     }
 
+    public Datos_del_hijo: any;
     recibirDatos(event: any){
         console.log(event);
+        this.Datos_del_hijo = event;
     }
 }

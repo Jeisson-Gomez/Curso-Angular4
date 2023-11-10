@@ -8,6 +8,12 @@
     (Desde_el_hijo)="recibirDatos($event)"
 ></Componente-Hijo>
 
+<div *ngIf="Datos_del_hijo">
+    <h1>{{ Datos_del_hijo.Nombre }}</h1>
+    <h1>{{ Datos_del_hijo.Web }}</h1>
+    <h1>{{ Datos_del_hijo.Twitter }}</h1>
+</div>
+
 <hr>
 
 <h4>
