@@ -28,6 +28,7 @@ export class HijoComponent{
     ngOnInit(){
         console.log(this.Propiedad_Uno);
         console.log(this.Propiedad_Dos);
+        this.enviar();
     }
 
     enviar(){
