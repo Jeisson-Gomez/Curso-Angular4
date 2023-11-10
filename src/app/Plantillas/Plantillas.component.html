@@ -2,7 +2,11 @@
     Propiedades input en Angular
 </h4>
 
-<Componente-Hijo></Componente-Hijo>
+<Componente-Hijo
+    [Texto_1]="'Datos_Externos'"
+    [Texto_2]="'Identity'"
+    (Desde_el_hijo)="'recibirDatos($event)'"
+></Componente-Hijo>
 
 <hr>
 
