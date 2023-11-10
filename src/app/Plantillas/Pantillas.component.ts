@@ -25,7 +25,7 @@ export class PlantillasComponent{
         this.Administrador = value;
     }
 
-    recibirDatos($event: any){
-        console.log($event.nombre);
+    recibirDatos(event: any){
+        console.log(event);
     }
 }

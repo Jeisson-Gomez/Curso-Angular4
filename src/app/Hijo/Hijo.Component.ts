@@ -9,7 +9,7 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
         <li>{{ Propiedad_Dos.web }}</li>
     </ul>
 
-    <button (click)="enviar($event)">Enviar datos al padre</button>
+    <button (click)="enviar()">Enviar datos al padre</button>
     `
 })
 
@@ -30,9 +30,11 @@ export class HijoComponent{
         console.log(this.Propiedad_Dos);
     }
 
-    enviar(event: any){
+    enviar(){
         this.Desde_el_hijo.emit({
-            Nombre: 'Jeisson Gomez'
-        })
+            Nombre: 'Jeisson Gomez',
+            Web: 'github.com/Jeisson-Gomez',
+            Twitter: '@Jeisson'
+        });
     }
 }
